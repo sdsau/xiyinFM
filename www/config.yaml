@@ -1,0 +1,8 @@
+name: ksping
+version: 1
+
+cron:
+    - description: check and get new song info everyday
+    url: admin/get_new_song.php
+    schedule: every monday of week 01:01
+    timezone: Beijing

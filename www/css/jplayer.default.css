@@ -1,0 +1,458 @@
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.happyworm.com/jquery/jplayer
+ *
+ * Skin Name: Blue Monday
+ *
+ * Copyright (c) 2010-2011 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Silvia Benvenuti
+ * Skin Version: 4.0 (jPlayer 2.1.0)
+ * Date: 1st September 2011
+ */
+
+div.jp-audio {
+	
+	/* Edit the font-size to counteract inherited font sizing.
+	 * Eg. 1.25em = 1 / 0.8em
+	 */
+
+	font-size:1em; /* 1.25em for testing in site pages */ /* No parent CSS that can effect the size in the demos ZIP */
+
+	/*font-family:Verdana, Arial, sans-serif;
+	line-height:1.6;*/
+	color: #666;
+	/*	
+	border:1px solid #009be3;
+	background-color:#eee;
+	*/
+	position:relative;
+	/* ping */
+	width:433px;
+	/*top: -30px;*/
+}
+
+div.jp-interface {
+	position: relative;
+	width:100%;
+	height:208px;
+	color: #ffffff;
+}
+
+/* @group info bar */
+ul.jp-info-bar {
+	/*position: relative;
+	top: 10px;
+	left: 10px;*/
+	list-style-type:none;
+	margin:0;
+	padding: 10px 0 0 10px;
+	width: 340px;
+	
+}
+li.jp-title {
+	height: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 30px;
+	line-height: 30px;
+}
+li.jp-artist,
+li.jp-era {
+	margin: 5px;
+	height: 14px;
+	font-size: 14px;
+	line-height: 14px;
+	/*position: relative;
+	top:-20px;*/
+}
+/* @end */
+
+/* @group CONTROLS */
+
+ul.jp-controls {
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	/*overflow:hidden;*/
+}
+
+ul.jp-controls li {
+	/*display:inline;*/
+	float: left;
+}
+
+ul.jp-controls a {
+	display:block;
+	outline:none;
+	text-indent:-9999px;
+	line-height:100%; /* need this for IE6 */
+}
+ul.jp-play-button {
+	position: absolute;
+	top: 72px;
+	left: 186px;
+	/*margin: 0 auto !important;
+	width: 61px;
+	height: 60px;*/
+}
+
+a.jp-play,
+a.jp-pause {
+	width: 61px;
+	height: 60px;
+}
+
+.jp-play {
+	background: url("../img/button.png") -100px 0 no-repeat;
+}
+.jp-play:hover {
+	background: url("../img/button.png") -161px 0 no-repeat;
+}
+.jp-play:active {
+	background: url("../img/button.png") -222px 0 no-repeat;
+}
+.jp-pause {
+	background: url("../img/button.png") -100px -60px no-repeat;
+}
+.jp-pause:hover {
+	background: url("../img/button.png") -161px -60px no-repeat;
+}
+.jp-pause:active {
+	background: url("../img/button.png") -222px -60px no-repeat;
+}
+
+ul.jp-share-bar {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+a.jp-vote, a.jp-voted, a.jp-share {
+	width:24px;
+	height: 24px;
+}
+
+a.jp-vote {
+	background: url("../img/button.png") -100px -190px no-repeat;
+	margin-right:5px;
+}
+
+a.jp-vote:hover {
+	background: url("../img/button.png") -124px -190px no-repeat;
+	/*background-position:-24px -190px;*/
+}
+
+a.jp-vote:active {
+	background: url("../img/button.png") -148px -190px no-repeat;
+	/*background-position:-48px -190px;*/
+}
+
+a.jp-voted {
+	background: url("../img/button.png") -172px -190px no-repeat;
+	margin-right:5px;
+	/*display: none !important;*/
+}
+
+a.jp-share {
+	background: url("../img/button.png") -196px -190px no-repeat;
+}
+a.jp-share:hover {
+	background: url("../img/button.png") -220px -190px no-repeat;
+}
+a.jp-share:active {
+	background: url("../img/button.png") -244px -190px no-repeat;
+}
+
+ul.jp-bottom-bar {
+	position: absolute;
+	left: 134px;
+	bottom: 10px;
+}
+a.jp-unlove, a.jp-like, a.jp-liked, a.jp-next {
+	width:34px;
+	height:34px;
+	margin:0 10px;
+}
+
+a.jp-unlove {
+	background: url("../img/button.png") -205px -120px no-repeat;
+}
+a.jp-unlove:hover{
+	background: url("../img/button.png") -240px -120px no-repeat;
+}
+a.jp-unlove:active{
+	background: url("../img/button.png") -275px -120px no-repeat;
+}
+
+a.jp-like {
+    background: url("../img/button.png") -100px -155px no-repeat;
+}
+a.jp-like:hover {
+	background: url("../img/button.png") -135px -155px no-repeat;
+}
+a.jp-like:active {
+	background: url("../img/button.png") -170px -155px no-repeat;
+}
+
+a.jp-liked {
+    background: url("../img/button.png") -205px -155px no-repeat;
+    /*display:none !important;*/
+}
+a.jp-liked:hover {
+	background: url("../img/button.png") -240px -155px no-repeat;
+}
+a.jp-liked:active {
+	background: url("../img/button.png") -275px -155px no-repeat;
+}
+
+a.jp-next {
+	background: url("../img/button.png") -100px -120px no-repeat;
+}
+a.jp-next:hover {
+	background: url("../img/button.png") -135px  -120px no-repeat;
+}
+a.jp-next:active {
+	background: url("../img/button.png") -170px  -120px no-repeat;
+}
+
+a.jp-repeat, a.jp-repeat-off {
+	width:20px;
+	height: 16px;
+	margin: 0 10px 0 0;
+}
+a.jp-repeat {
+	background: url("../img/button.png") -165px  -310px no-repeat;
+}
+
+a.jp-repeat:active {
+	background: url("../img/button.png") -190px  -310px no-repeat;
+}
+a.jp-repeat-off {
+	background: url("../img/button.png") -215px  -310px no-repeat;
+}
+
+a.jp-repeat-off:active {
+	background: url("../img/button.png") -240px  -310px no-repeat;
+}
+/* @end */
+
+/* @group progress bar */
+
+div.jp-progress {
+	overflow:hidden;
+	position: absolute;
+	top:150px;
+	height:4px;
+	width:100%;
+}
+
+div.jp-seek-bar {
+	/*background-color: #fff;*/
+	width:0px;
+	height:100%;
+	/*cursor: pointer;*/
+}
+div.jp-play-bar {
+	/*background-color: orange;*/
+	width:0px;
+	height:100%;
+	background: url("../img/button.png") -310px -400px repeat-x;
+}
+
+/* The seeking class is added/removed inside jPlayer */
+div.jp-seeking-bg {
+	/*background-color: #009BE3;*/
+
+}
+
+/* @end */
+
+/* @group volume controls */
+
+ul.jp-volume-button {
+	position: absolute;
+	right:60px;
+	bottom:18px;
+}
+
+a.jp-mute,
+a.jp-unmute {
+	width:19px;
+	height:19px;
+}
+
+a.jp-mute {
+	background: url("../img/button.png") -100px -214px no-repeat;
+}
+a.jp-mute:hover {
+	background: url("../img/button.png") -119px -214px no-repeat;
+}
+a.jp-mute:active {
+	background: url("../img/button.png") -138px -214px no-repeat;
+}
+a.jp-unmute {
+	background: url("../img/button.png") -157px -214px no-repeat;
+	display: none;
+}
+a.jp-unmute:hover {
+	background: url("../img/button.png") -176px -214px no-repeat;
+}
+a.jp-unmute:active {
+	background: url("../img/button.png") -195px -214px no-repeat;
+}
+
+div.jp-volume-bar {
+	position: absolute;
+	right:10px;
+	bottom:20px;
+	overflow:hidden;
+	/*z-index: 30;*/
+	width:45px;
+	height:3px;
+	padding: 6px 0;
+	cursor: pointer;
+}
+div.jp-volume-bar-value {
+	background: url("../img/button.png") -310px -404px repeat-x;
+	width:0px;
+	height:3px;
+}
+/* @end */
+
+/* @group current time, duration and remain time */
+
+div.jp-remain-time {
+	position:absolute;
+	top:100px;
+	right:10px;
+	height: 40px;
+	font-size:38px;
+	text-align: right;
+}
+
+/*
+div.jp-audio div.jp-time-holder {
+	position:absolute;
+	top:100px;
+	right:10px;
+	width:205px;
+	height: 40px;
+}
+
+div.jp-current-time,
+div.jp-duration {
+	width:60px;
+	font-size:.64em;
+	font-style:oblique;
+}
+div.jp-current-time {
+	float: left;
+	display:inline;
+}
+div.jp-duration {
+	float: right;
+	display:inline;
+	text-align: right;
+}*/
+/* @end */
+
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
+
+div.jp-jplayer audio,
+div.jp-jplayer {
+	width:0px;
+	height:0px;
+}
+
+div.jp-jplayer {
+	background-color: #000000;
+}
+
+
+
+/* @group TOGGLES */
+
+/* The audio toggles are nested inside jp-time-holder */
+/*
+ul.jp-toggles {
+	list-style-type:none;
+	padding:0;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+div.jp-audio .jp-type-single ul.jp-toggles {
+	width:25px;
+}
+div.jp-audio .jp-type-playlist ul.jp-toggles {
+	width:55px;
+	margin: 0;
+	position: absolute;
+	left: 325px;
+	top: 50px;
+}
+
+ul.jp-toggles li {
+	display:block;
+	float:right;
+}
+
+ul.jp-toggles li a {
+	display:block;
+	width:25px;
+	height:18px;
+	text-indent:-9999px;
+	line-height:100%; /* need this for IE6 *\/
+}
+
+a.jp-repeat {
+	background: url("jplayer.blue.monday.jpg") 0 -290px no-repeat;
+}
+
+a.jp-repeat:hover {
+	background: url("jplayer.blue.monday.jpg") -30px -290px no-repeat;
+}
+
+a.jp-repeat-off {
+	background: url("jplayer.blue.monday.jpg") -60px -290px no-repeat;
+}
+
+a.jp-repeat-off:hover {
+	background: url("jplayer.blue.monday.jpg") -90px -290px no-repeat;
+}
+*/
+/* @end */
+
+/* @group NO SOLUTION error feedback */
+
+.jp-no-solution {
+	position:absolute;
+	width:390px;
+	margin-left:-202px;
+	left:50%;
+	top: 10px;
+
+	padding:5px;
+	font-size:.8em;
+	background-color:#eee;
+	border:2px solid #009be3;
+	color:#000;
+	display:none;
+}
+
+.jp-no-solution a {
+	color:#000;
+}
+
+.jp-no-solution span {
+	font-size:1em;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+}
+
+/* @end */

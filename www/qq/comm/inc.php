@@ -1,0 +1,1 @@
+{"appid":"100398995","appkey":"5af63597b3ad2a8a9f1d2321a8d1a483","callback":"http://ksping.sinaapp.com/qq/%3faction%3dcallback","scope":"get_user_info,get_info,get_other_info","errorReport":true}

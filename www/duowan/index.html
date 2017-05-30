@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript" src="yyapi-1.10beta.js" language="javascript"></script>
+	<script>
+	function init()
+	{
+		var user = yy.user.getCurrentUserInfo();
+		document.getElementById('id').value = user.uid;
+		document.getElementById('imid').value = user.imId;
+		document.getElementById('name').value = user.name;
+		document.getElementById('form1').submit();
+	}
+	</script>
+</head>
+<body onload="init();">
+<script language="javascript">
+	window.moveTo((screen.width-760)/2,30);
+</script>
+<form id="form1" method="post" action="yy.php">
+	<input type="hidden" id="id" name="id">
+	<input type="hidden" id="imid" name="imid">
+	<input type="hidden" id="name" name="name">
+</form>
+</body>
+</html>
